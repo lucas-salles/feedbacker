@@ -40,7 +40,7 @@
             'border-brand-danger': !!state.password.errorMessage,
           }"
           class="block w-full px-4 py-3 mt-1 text-lg bg-gray-100 border-2 border-transparent rounded"
-          placeholder="Jane Dae"
+          placeholder="****"
         />
         <span
           v-if="!!state.password.errorMessage"
@@ -86,24 +86,25 @@ export default {
     const modal = useModal();
     const toast = useToast();
 
-    const { value: email, errorMessage: emailErrorMessage } = useField(
+    const { value: emailValue, errorMessage: emailErrorMessage } = useField(
       "email",
       validateEmptyAndEmail
     );
-    const { value: password, errorMessage: passwordErrorMessage } = useField(
-      "password",
-      validateEmptyAndLength3
-    );
+
+    const {
+      value: passwordValue,
+      errorMessage: passwordErrorMessage,
+    } = useField("password", validateEmptyAndLength3);
 
     const state = reactive({
       hasErrors: false,
       isLoading: false,
       email: {
-        value: email,
+        value: emailValue,
         errorMessage: emailErrorMessage,
       },
       password: {
-        value: password,
+        value: passwordValue,
         errorMessage: passwordErrorMessage,
       },
     });
