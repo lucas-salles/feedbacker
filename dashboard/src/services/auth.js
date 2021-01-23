@@ -19,6 +19,7 @@ export default (httpClient) => ({
       errors,
     };
   },
+
   login: async ({ email, password }) => {
     const response = await httpClient.post("/auth/login", {
       email,
