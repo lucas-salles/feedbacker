@@ -31,7 +31,7 @@ describe("Home", () => {
     cy.get("#header-login-button").click();
     cy.get("#modal-login");
 
-    cy.get("#email-field").type("test@email.com");
+    cy.get("#email-field").type("lucas@lucas.me");
     cy.get("#password-field").type("1234");
     cy.get("#submit-button").click();
 
@@ -44,7 +44,7 @@ describe("Home", () => {
     cy.get("#header-login-button").click();
     cy.get("#modal-login");
 
-    cy.get("#email-field").type("test@");
+    cy.get("#email-field").type("lucas@");
     cy.get("#password-field").type("1234");
     cy.get("#submit-button").click();
 
@@ -57,7 +57,7 @@ describe("Home", () => {
     cy.get("#header-login-button").click();
     cy.get("#modal-login");
 
-    cy.get("#email-field").type("test@email.com");
+    cy.get("#email-field").type("lucas@lucas.me");
     cy.get("#password-field").type("1234");
     cy.get("#submit-button").click();
 
