@@ -30,7 +30,7 @@
         class="flex py-3 pl-5 mt-2 rounded justify-between items-center bg-brand-gray w-full lg:w-1/2"
       >
         <span v-if="state.hasError">Erro ao carregar a apikey</span>
-        <span v-else>{{ store.User.currentUser.apiKey }}</span>
+        <span v-else id="apikey">{{ store.User.currentUser.apiKey }}</span>
         <div class="flex ml-20 mr-5" v-if="!state.hasError">
           <icon
             @click="handleCopy"
@@ -40,6 +40,7 @@
             class="cursor-pointer"
           />
           <icon
+            id="generate-apikey"
             @click="handleGenerateApiKey"
             name="loading"
             :color="brandColors.graydark"
@@ -64,7 +65,7 @@
       >
         <span v-if="state.hasError">Erro ao carregar o script</span>
         <pre v-else>
-&lt;script src="https://lucas-salles-feedbacker-widget.netfly.app?api_key={{
+&lt;script src="https://lucas-salles-feedbacker-widget.netlify.app?api_key={{
             store.User.currentUser.apiKey
           }}"&gt;&lt;/script&gt;</pre
         >

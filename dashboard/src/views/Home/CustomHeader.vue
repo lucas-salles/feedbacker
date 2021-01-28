@@ -13,12 +13,14 @@
         <div class="flex">
           <button
             @click="() => emit('create-account')"
+            id="header-create-account-button"
             class="px-6 py-2 font-bold rounded-full text-white focus:outline-none"
           >
             Crie uma conta
           </button>
           <button
             @click="() => emit('login')"
+            id="header-login-button"
             class="px-6 py-2 font-bold bg-white rounded-full text-brand-main focus:outline-none"
           >
             Entrar
@@ -39,6 +41,8 @@
         </p>
         <div>
           <button
+            @click="() => emit('create-account')"
+            id="cta-create-account-button"
             class="px-6 py-2 mt-10 font-bold bg-white rounded-full text-brand-main focus:outline-none"
           >
             Crie uma conta grátis

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between">
+  <div id="modal-login" class="flex justify-between">
     <h1 class="text-4xl font-black text-gray-800">Entre na sua conta</h1>
 
     <button @click="close" class="text-4xl text-gray-600 focus:outline-none">
@@ -15,7 +15,7 @@
           v-model="state.email.value"
           type="email"
           name="email"
-          id="email"
+          id="email-field"
           :class="{
             'border-brand-danger': !!state.email.errorMessage,
           }"
@@ -23,6 +23,7 @@
           placeholder="jane.dae@gmail.com"
         />
         <span
+          id="email-error"
           v-if="!!state.email.errorMessage"
           class="block font-medium text-brand-danger"
           >{{ state.email.errorMessage }}</span
@@ -35,7 +36,7 @@
           v-model="state.password.value"
           type="password"
           name="password"
-          id="password"
+          id="password-field"
           :class="{
             'border-brand-danger': !!state.password.errorMessage,
           }"
@@ -50,6 +51,7 @@
       </label>
 
       <button
+        id="submit-button"
         :disabled="state.isLoading"
         type="submit"
         :class="{
