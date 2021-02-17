@@ -31,8 +31,7 @@ import useStore from "../../hooks/store";
 import useNavigation from "../../hooks/navigation";
 import { setMessage } from "../../store";
 import Icon from "../Icon/index.vue";
-// import services from "../../services";
-const services = {};
+import services from "../../services";
 
 type State = {
   feedback: string;

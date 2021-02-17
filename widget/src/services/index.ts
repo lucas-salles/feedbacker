@@ -1,4 +1,5 @@
 import axios from "axios";
+import FeedbacksService from "./feedbacks";
 
 const API_ENVS = {
   production: "https://feedbacker-backend.vercel.app/",
@@ -26,4 +27,6 @@ httpClient.interceptors.response.use(
   }
 );
 
-export default {};
+export default {
+  feedbacks: FeedbacksService(httpClient),
+};
