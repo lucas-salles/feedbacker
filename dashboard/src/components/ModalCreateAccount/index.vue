@@ -40,7 +40,7 @@
             'border-brand-danger': !!state.email.errorMessage,
           }"
           class="block w-full px-4 py-3 mt-1 text-lg bg-gray-100 border-2 border-transparent rounded"
-          placeholder="jane.doe@gmail.com"
+          placeholder="jane.dae@gmail.com"
         />
         <span
           v-if="!!state.email.errorMessage"
