@@ -4,7 +4,7 @@ interface SetupPayload {
 }
 
 export function setup({ onProduction, onDevelopment }: SetupPayload) {
-  if (process.env.NODE_ENV !== "prodction") {
+  if (process.env.NODE_ENV !== "production") {
     onDevelopment();
     return;
   }

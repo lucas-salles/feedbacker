@@ -13,7 +13,7 @@ import { defineComponent, reactive, watch } from "vue";
 import Standby from "./Standby.vue";
 import Box from "./Box.vue";
 import useIframeControl from "../../hooks/iframe";
-import useStore from "@/hooks/store";
+import useStore from "../../hooks/store";
 
 type State = {
   component: string;
