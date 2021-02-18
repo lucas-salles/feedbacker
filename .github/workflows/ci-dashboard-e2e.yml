@@ -1,11 +1,11 @@
-name: E2e testing
+name: Dashboard e2e testing
 
 on:
   workflow_dispatch:
   push:
-    branches: [ $default-branch ]
+    branches: [$default-branch]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [$default-branch]
 
 jobs:
   cypress:
