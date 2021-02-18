@@ -6,13 +6,13 @@ Feedbacker é uma plataforma de feedbacks, onde é possível carregar um script 
 
 ## Dashboard
 
-No desenvolvimento do Dashboard foi utilizado [Vue.JS 3](https://vuejs.org/).
+No desenvolvimento do Dashboard foi utilizado [Vue.js](https://vuejs.org/).
 
 ![alt text](img/Dashboard.png)
 
 ## Widget
 
-Na implementação do Widget foi utilizado [Vue.JS 3](https://vuejs.org/) e [TypeScript](https://www.typescriptlang.org/).
+Na implementação do Widget foi utilizado [Vue.js](https://vuejs.org/) com [TypeScript](https://www.typescriptlang.org/).
 
 ![alt text](img/Widget.png)
 
