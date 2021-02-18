@@ -7,7 +7,7 @@ function init(apiKey) {
     const WIDGET_URL = `https://lucas-salles-feedbacker-widget.netlify.app?api_key=${apiKey}&page=${page}&fingerprint=${fingerprint.visitorId}`;
     const config = { method: "HEAD" };
     const res = await fetch(
-      `https://feedbacker-backend.vercel.app/apikey/exists?apiKey=${apiKey}`,
+      `https://feedbacker-backend.vercel.app/apikey/exists?apikey=${apiKey}`,
       config
     );
 
